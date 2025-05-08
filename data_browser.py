@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title and dataset info
-st.title("Lupus Research Alliance Data Browser")
+st.title("This is the embedded webpage")
 st.markdown("## [Sample dataset](https://data.mendeley.com/datasets/kb36mjdmsn/1) was sourced from Mendeley.")
 st.divider()
 

@@ -1,1 +1,60 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LRA Data Browser Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        .description {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the LRA Data Browser Portal</h1>
+    </header>
+
+    <div class="content">
+        <div class="description">
+            <p>The following embedded tool allows you to explore datasets via the LRA Data Browser, developed with Streamlit. Use the filters and visualizations to interactively engage with the data.</p>
+        </div>
+
+        <iframe src="https://lra-data-browser.streamlit.app/"></iframe>
+
+        <div class="note">
+            <p><strong>Note:</strong> This tool may take a moment to load, depending on your internet connection. Please be patient while the data loads from the source.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Data Visualization Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -122,11 +122,11 @@ st.header("Waterfall selection")
 
 # --- Filter options ---
 drug_cols = [
-    'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',
-    'cyclosporine', 'cyclophosphamide', 'dapsone', 'hydroxychloroquine',
-    'leflunomide', 'methotrexate', 'methylprednisolone', 'mycophenolate mofetil',
-    'mycophenolic acid', 'prednisone', 'rituximab', 'tacrolimus',
-    'voclosporine', 'triamcinolone', 'other drugs'
+	'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',
+	'cyclosporine', 'cyclophosphamide', 'dapsone', 'hydroxychloroquine',
+	'leflunomide', 'methotrexate', 'methylprednisolone', 'mycophenolate mofetil',
+	'mycophenolic acid', 'prednisone', 'rituximab', 'tacrolimus',
+	'voclosporine', 'triamcinolone', 'other drugs'
 ]
 
 # 1. Sex at birth
@@ -159,27 +159,27 @@ labels.append("All participants")
 
 # 2. Sex at birth
 if sex != 'All':
-    df_current = df_current[df_current['sex_at_birth'] == sex]
-    labels.append(f"Sex: {sex}")
-    counts.append(len(df_current))
+	df_current = df_current[df_current['sex_at_birth'] == sex]
+	labels.append(f"Sex: {sex}")
+	counts.append(len(df_current))
 
 # 3. Race
 if race != 'All':
-    df_current = df_current[df_current['race'] == race]
-    labels.append(f"Race: {race}")
-    counts.append(len(df_current))
+	df_current = df_current[df_current['race'] == race]
+	labels.append(f"Race: {race}")
+	counts.append(len(df_current))
 
 # 4. Ethnicity
 if ethnicity != 'All':
-    df_current = df_current[df_current['ethnicity'] == ethnicity]
-    labels.append(f"Ethnicity: {ethnicity}")
-    counts.append(len(df_current))
+	df_current = df_current[df_current['ethnicity'] == ethnicity]
+	labels.append(f"Ethnicity: {ethnicity}")
+	counts.append(len(df_current))
 
 # 5. Cohort
 if cohort != 'All':
-    df_current = df_current[df_current['cohort'] == cohort]
-    labels.append(f"Cohort: {cohort}")
-    counts.append(len(df_current))
+	df_current = df_current[df_current['cohort'] == cohort]
+	labels.append(f"Cohort: {cohort}")
+	counts.append(len(df_current))
 
 # 6. SLEDAI range
 df_current = df_current[(df_current[sledaicol] >= sledai_range[0]) & (df_current[sledaicol] <= sledai_range[1])]
@@ -193,10 +193,10 @@ counts.append(len(df_current))
 
 # 8. Drugs
 if drug_selection:
-    for drug in drug_selection:
-        df_current = df_current[df_current[drug] > 0]
-        labels.append(f"On {drug}")
-        counts.append(len(df_current))
+	for drug in drug_selection:
+		df_current = df_current[df_current[drug] > 0]
+		labels.append(f"On {drug}")
+		counts.append(len(df_current))
 
 # --- Plot Waterfall ---
 fig, ax = plt.subplots(figsize=(9, 4))
@@ -206,5 +206,5 @@ ax.set_xticklabels(labels, rotation=22, ha='right')
 ax.set_ylabel("Participant Count")
 ax.set_title("Cohort Size After Each Filter (Waterfall Plot)")
 for i, c in enumerate(counts):
-    ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
+	ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
 st.pyplot(fig)

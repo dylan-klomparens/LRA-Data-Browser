@@ -120,6 +120,9 @@ st.divider()
 
 st.header("Waterfall selection")
 
+with st.expander("Introduction and usage instructions"):
+	st.markdown(f"This waterfall chart visually summarizes the sequential attrition of the study cohort as increasingly specific inclusion criteria are applied. Each bar represents the remaining participant count after implementing a particular filter, which can be: sex at birth, race, ethnicity, cohort, disease activity (SLEDAI), organ damage (SLICC), and medication use. This allows you to see sample size reduction at each step, highlighting the effect of individual and combined eligibility criteria on cohort composition.")
+
 # --- Filter options ---
 drug_cols = [
 	'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',

@@ -207,4 +207,7 @@ ax.set_ylabel("Participant Count")
 ax.set_title("Cohort Size After Each Filter (Waterfall Plot)")
 for i, c in enumerate(counts):
 	ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
+# Remove top and right spines
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
 st.pyplot(fig)

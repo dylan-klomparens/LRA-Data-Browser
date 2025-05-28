@@ -1,82 +1,369 @@
-﻿RA,Gender,PROV,AGE,age onset,Fever,Fever weight,ACL,acute cutaneous lupus weight,CCL,CCL weight,Oral Ul,Oral Ul weight,Alopecia,Alopecia weight,joint pain,joint pain weight,Serositis,Serositis,Renal,lupus nephritis class,LN class weight,Proteinuria,Proteinuria weight,vasculitis,Neurologic,Neurologic weight,Hemolytic Anemia,Hemolytic Anemia weight,Combs,Leukopenia,Leukopenia weight,Thrombocytopenia,Thrombocytopenia weight,Anti-Nuclear Antibody,Anti-dsDNA,Anti-dsDNA weight,Anti-Sm,Anti-Sm weight,Anti-Phospholipid,Anti-Phospholipid weight,Low C3,Low C4,Complements weight,Azathioprine,Hydroxychloroquine,Corticosteroids,Methotrexate,Cyclophosphamide,Mycophenolate Mofetil,Rituximab,Belimumab,Aspirin ,Rheumatoid Factor,Classification Score
-RA1001,Male,Muscat,19,12,Fever,2,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,Y,3,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,N,N,N,N,N,N,N,19
-RA1002,Female,Al Batinah,21,14,Fever,2,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,Y,N,N,N,N,N,P,6
-RA1003,Male,Interior,21,7,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,N,Y,N,N,N,N,N,N,6
-RA1004,Female,Salalah,22,,N,0,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,N,N,N,N,N,N,N,N,N,12
-RA1006,Female,Al Sharqiya,21,9,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,Y,N,N,N,N,N,N,6
-RA1007,Female,Al Sharqiya,22,11,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,P,2,N,N,0,N,N,N,Y,N,N,N,N,N,N,8
-RA1008,Female,Al Dhahira,26,15,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1010,Female,Al Batinah,28,,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1011,Male,Al Sharqiya,27,12,Fever,2,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,N,6
-RA1012,Female,Interior,28,15,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,N,N,N,N,N,N,N,6
-RA1013,Female,Al Dhahira,29,22,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1014,Male,Al Batinah,29,15,N,0,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,Y,N,N,N,N,N,N,12
-RA1015,Female,Al Sharqiya,28,6,N,0,N,0,N,0,N,0,Alopecia,2,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,Y,N,N,N,N,N,N,12
-RA1016,Female,Al Batinah,29,9,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,Y,Y,Y,Y,N,N,N,N,N,P,6
-RA1017,Female,Al Batinah,30,22,N,0,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,Y,N,N,N,12
-RA1019,Female,Al Batinah,31,24,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1019,Female,Al Batinah,31,26,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,Y,N,10
-RA1020,Female,Interior,32,18,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,N,6
-RA1021,Female,Al Batinah,32,9,Fever,2,N,0,N,0,N,0,Alopecia,2,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,N,N,8
-RA1022,Female,Muscat,32,15,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,N,N,6
-RA1023,Female,Al Batinah,33,18,Fever,2,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,P,6,N,0,N,0,N,N,0,Y,Y,Y,Y,N,N,N,N,Y,P,18
-RA1024,Female,Muscat,34,9,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,N,Y,N,N,N,N,N,P,6
-RA1025,Female,Al Sharqiya,34,23,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,Y,Y,Y,N,N,N,N,N,Y,N,6
-RA1026,Female,Al Batinah,34,30,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1027,Female,Al Batinah,34,25,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,10
-RA102B,Female,Muscat,36,23,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,Y,N,6
-RA1029,Female,Interior,57,40,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1030,Female,Muscat,36,12,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1031,Female,Al Dhahira,37,25,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1032,Female,Al Batinah,38,25,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,Y,N,N,P,6
-RA1034,Male,Interior,39,27,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,Low,Low,4,N,Y,Y,Y,Y,N,Y,N,N,P,10
-RA1035,Female,Al Dhahira,38,27,N,0,N,0,N,0,N,0,Alopecia,2,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,N,8
-RA1036,Female,Muscat,39,31,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,MP,2,N,N,0,N,Y,Y,Y,N,N,N,N,Y,N,8
-RA1037,Female,Al Batinah,39,28,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1046,Female,Al Dhahira,45,38,N,0,Rash,6,N,0,N,0,Alopecia,2,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,Low,N,3,N,Y,Y,N,N,N,N,N,Y,P,17
-RA1047,Female,Al Batinah,43,38,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1048,Female,Muscat,44,30,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,Y,N,6
-RA1049,Female,Al Batinah,45,21,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,WP,6
-RA1050,Female,Muscat,44,31,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,Y,P,6
-RA1051,Female,Al Batinah,34,30,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1052,Female,Muscat,45,37,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1053,Female,Muscat,44,40,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,Y,P,6
-RA1054,Female,Muscat,47,41,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,Y,N,N,P,6
-RA1055,Female,Al Dhahira,54,35,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,N,6
-RA1056,Female,Al Dhahira,47,40,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1057,Female,Al Sharqiya,49,38,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,Y,Y,Y,Y,N,N,N,N,Y,P,6
-RA1059,Male,Al Dhahira,48,,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1059,Female,Muscat,49,41,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,Y,Y,Y,Y,N,N,N,N,N,P,6
-RA1060,Female,Al Sharqiya,49,37,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1061,Female,Muscat,51,44,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1062,Female,Muscat,54,50,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,N,N,10
-RA1063,Female,Al Batinah,53,32,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,Anemia,4,Y,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,Y,N,N,P,10
-RA1064,Female,Muscat,51,38,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1065,Female,Al Sharqiya,49,32,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1066,Female,Interior,59,49,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1067,Female,Al Dhahira,55,45,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1068,Female,Muscat,56,33,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,WP,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1069,Female,Al Batinah,56,50,Fever,2,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1070,Male,Al Batinah,57,51,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1071,Male,Al Batinah,57,52,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,N,6
-RA1072,Female,Al Batinah,57,23,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1073,Female,Muscat,58,54,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,N,Y,N,N,N,N,Y,N,6
-RA1074,Male,Muscat,58,45,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1075,Female,Muscat,56,43,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,N,N,N,N,N,Y,N,6
-RA1076,Female,Dhofar,58,47,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,P,6,N,0,N,0,N,Low,3,N,N,Y,Y,N,N,Y,N,N,N,15
-RA1077,Female,Muscat,57,50,Fever,2,Rash,6,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,12
-RA 1079,Male,Muscat,61,,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,N,N,N,N,N,N,N,N,6
-RA 1080,Female,Muscat,58,45,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1051,Female,Dhofar,61,54,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,Y,N,6
-RA1082,Female,Al Batinah,59,47,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA10B3,Female,Al Batinah,69,56,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,N,6
-RA 1084,Female,Al Batinah,64,44,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,Y,Y,N,N,N,N,N,N,P,6
-RA20B5,Female,Al Batinah,65,53,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,P,N,0,N,0,N,0,N,N,0,N,N,Y,Y,N,N,N,N,N,P,6
-RA1095,Female,Interior,66,53,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RÀ1087,Female,Al Batinah,62,54,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1096,Female,Muscat,75,62,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1097,Male,Interior,72,54,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA 1098,Female,Al-Buraimi,75,61,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,N,6
-RA1099,Male,Al Batinah,75,64,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,Y,P,6
-RA1100,Female,Al Batinah,79,,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,N,Y,Y,Y,N,N,N,N,N,P,6
-RA1102,Female,Al Batinah,92,,N,0,N,0,N,0,N,0,N,0,joint pain,6,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,N,0,N,0,N,0,N,N,0,Y,Y,Y,N,N,N,N,N,Y,P,6
+sex_at_birth,ethnicity,race,abatacept,anifrolumab-fnia,azathioprine,belimumab,chloroquine,cyclosporine,cyclophosphamide,dapsone,hydroxychloroquine,leflunomide,methotrexate,methylprednisolone,mycophenolate mofetil,mycophenolic acid,prednisone,rituximab,tacrolimus,voclosporine,triamcinolone,other drugs,cohort,latest SLEDAI 2K score,latest SLICC damage index
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+,,,0,0,1,0,0,0,0,0,2,0,1,0,0,0,1,0,0,0,0,12,Extra-renal Lupus Flare,6,3
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,6,0
+,,,0,0,0,2,0,0,0,0,3,0,0,0,0,0,3,0,6,0,0,29,LN Active,12,2
+,,,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,30,LN Active,4,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,New Onset,,
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,,
+,,,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,13,Prevalent Cases,0,0
+,,,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,3,Prevalent Cases,5,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,14,Prevalent Cases,4,2
+,,,0,1,0,1,0,1,0,0,2,1,0,1,0,0,1,0,0,0,0,33,Prevalent Cases,6,5
+,,,0,0,0,0,0,0,1,0,2,0,0,0,1,0,4,0,0,0,0,10,LN Active,14,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,New Onset,0,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,,0
+,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,4,2
+,,,0,0,0,0,0,0,0,0,2,0,0,0,0,2,1,0,0,0,0,1,LN Active,20,0
+,,,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,24,Extra-renal Lupus Flare,4,1
+,,,0,0,1,0,0,0,0,0,2,0,1,0,1,0,0,0,0,0,0,5,Extra-renal Lupus Flare,6,0
+,,,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,Prevalent Cases,4,0
+,,,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,Prevalent Cases,0,1
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,New Onset,,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,12,LN Active,9,0
+,,,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,3,Extra-renal Lupus Flare,10,2
+,,,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,2,New Onset,4,0
+,,,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,5,LN Active,16,1
+,,,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,1,0,4,LN Active,4,0
+,,,0,0,0,2,0,0,0,0,2,0,0,0,3,0,2,0,0,0,0,10,LN Active,4,1
+,,,0,0,0,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,0,14,LN Active,6,0
+,,,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,9,LN Active,4,1
+,,,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,Prevalent Cases,0,0
+,,,0,0,0,0,0,0,0,0,2,0,2,0,0,1,3,0,2,0,0,10,Extra-renal Lupus Flare,6,0
+,,,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,2,New Onset,2,0
+,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,Prevalent Cases,2,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,,
+,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,Prevalent Cases,0,0
+,,,0,0,0,1,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,7,LN Active,0,0
+,,,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,3,0,14,Prevalent Cases,0,5
+,,,0,2,0,0,0,0,0,0,2,0,0,2,0,0,0,0,2,0,0,6,New Onset,2,0
+,,,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,12,Extra-renal Lupus Flare,6,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+,,,0,0,0,0,0,0,0,0,2,0,0,2,2,0,0,0,0,0,0,28,LN Active,0,2
+,,,0,0,2,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,10,LN Active,10,1
+,,,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,16,LN Active,6,0
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+,,,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,3,Prevalent Cases,0,0
+,,,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,7,LN Active,6,1
+,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+MALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,2,Prevalent Cases,0,0
+MALE,Hispanic or Latino,Other,0,0,0,0,0,0,4,0,2,0,0,0,6,0,2,4,2,0,0,11,Extra-renal Lupus Flare,0,4
+MALE,Hispanic or Latino,White,0,0,0,2,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,6,New Onset,0,0
+MALE,Hispanic or Latino,White,0,0,12,4,0,0,6,0,20,0,24,0,6,6,8,0,0,6,0,50,LN Active,4,1
+MALE,Hispanic or Latino,White,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,Prevalent Cases,2,0
+MALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,4,0,2,0,0,0,0,5,LN Active,18,0
+MALE,Hispanic or Latino,Other,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,3,LN Active,12,0
+MALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,6,LN Active,12,4
+MALE,Hispanic or Latino,White,0,2,0,2,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,4,Prevalent Cases,4,3
+MALE,Hispanic or Latino,Other,0,0,0,0,0,0,0,0,2,0,0,0,3,1,0,0,0,0,0,22,Prevalent Cases,0,0
+MALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,3,0,0,0,3,0,3,0,3,0,0,42,Extra-renal Lupus Flare,2,0
+MALE,Hispanic or Latino,Black or African American,0,0,0,2,0,0,0,0,2,0,0,0,2,0,1,0,0,0,0,4,Prevalent Cases,4,0
+MALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,,
+FEMALE,Hispanic or Latino,White,0,0,18,6,0,0,128,0,6,0,0,12,22,0,19,42,11,4,0,102,LN Active,6,1
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,1,Prevalent Cases,2,0
+FEMALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,1,1,1,0,0,0,0,11,LN Active,10,3
+FEMALE,Hispanic or Latino,White,0,0,2,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,Extra-renal Lupus Flare,8,0
+FEMALE,Hispanic or Latino,White,0,0,10,5,0,0,10,0,15,0,5,11,5,19,8,0,0,0,9,63,LN Active,6,2
+FEMALE,Hispanic or Latino,White,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,Extra-renal Lupus Flare,2,0
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,2,0,1,1,0,0,1,9,LN Active,14,2
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,5,0,0,0,0,2,New Onset,10,0
+FEMALE,Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,LN Active,,
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,2,0,1,0,0,0,0,8,New Onset,8,0
+FEMALE,Hispanic or Latino,White,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,Prevalent Cases,5,0
+FEMALE,Hispanic or Latino,White,0,0,0,6,0,0,0,0,4,0,0,0,13,0,0,0,0,0,0,38,Prevalent Cases,2,3
+FEMALE,Hispanic or Latino,White,0,0,0,19,0,0,6,0,12,0,6,27,36,6,12,0,0,0,3,80,Extra-renal Lupus Flare,0,2
+FEMALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,3,0,1,3,0,0,1,2,0,0,0,9,Extra-renal Lupus Flare,6,1
+FEMALE,Hispanic or Latino,Other,0,0,0,1,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,8,Extra-renal Lupus Flare,5,0
+FEMALE,Hispanic or Latino,Other,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,6,LN Active,6,0
+FEMALE,Hispanic or Latino,Other,0,0,4,0,0,0,3,0,4,0,0,0,4,0,1,3,0,0,0,11,LN Active,6,1
+FEMALE,Hispanic or Latino,African American,0,0,0,0,0,0,0,0,3,0,0,0,0,0,2,0,0,0,3,39,New Onset,3,1
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,LN Active,10,0
+FEMALE,Hispanic or Latino,White,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,9,Prevalent Cases,4,1
+FEMALE,Hispanic or Latino,,0,0,0,2,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,20,Extra-renal Lupus Flare,7,1
+FEMALE,Hispanic or Latino,White,0,0,14,7,0,0,7,6,14,0,28,0,91,0,19,7,7,0,0,108,LN Active,8,4
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,4,0,2,0,0,0,0,0,0,9,Prevalent Cases,0,2
+FEMALE,Hispanic or Latino,White,0,0,2,0,0,0,0,0,5,0,2,0,0,0,0,0,0,0,0,8,Extra-renal Lupus Flare,6,2
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,6,0,12,0,0,0,9,0,0,0,1,72,Extra-renal Lupus Flare,6,0
+FEMALE,Hispanic or Latino,Other,0,0,3,6,0,0,0,0,4,0,0,0,4,7,4,4,0,0,0,8,Extra-renal Lupus Flare,10,0
+FEMALE,Hispanic or Latino,Black or African American,0,1,0,2,0,2,0,0,2,0,0,0,2,0,2,0,0,0,0,23,LN Active,0,4
+FEMALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,4,LN Active,4,0
+FEMALE,Hispanic or Latino,White,6,0,12,0,0,0,36,0,20,6,0,6,36,0,4,0,0,0,0,101,Extra-renal Lupus Flare,8,3
+FEMALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,2,Prevalent Cases,2,0
+FEMALE,Hispanic or Latino,White,0,1,0,0,0,0,0,0,3,0,1,0,2,0,1,0,0,0,0,18,Prevalent Cases,0,0
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,1,New Onset,6,0
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,4,9,0,0,0,0,0,0,0,0,0,8,18,New Onset,8,0
+FEMALE,Hispanic or Latino,White,0,0,0,3,0,0,0,3,9,0,0,0,12,6,0,0,3,0,0,18,Extra-renal Lupus Flare,4,0
+FEMALE,Hispanic or Latino,Other,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,5,LN Active,8,0
+FEMALE,Hispanic or Latino,White,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,2,New Onset,6,0
+FEMALE,Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,18,LN Active,4,0
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,9,LN Active,12,0
+FEMALE,Hispanic or Latino,Other,0,0,0,3,0,0,0,0,3,0,0,0,3,0,2,0,3,0,0,14,Extra-renal Lupus Flare,6,0
+FEMALE,Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,8,0
+FEMALE,Hispanic or Latino,White,0,0,0,1,0,0,0,0,3,0,0,0,0,1,0,0,0,0,0,1,New Onset,6,0
+FEMALE,Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,New Onset,6,0
+FEMALE,Hispanic or Latino,White,0,0,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,5,Prevalent Cases,4,1
+FEMALE,Hispanic or Latino,White,0,0,1,0,0,0,4,0,2,0,0,0,1,0,0,0,1,0,0,5,Extra-renal Lupus Flare,10,0
+MALE,Not Hispanic or Latino,Asian,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,3,Prevalent Cases,0,4
+MALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,14,Extra-renal Lupus Flare,11,3
+MALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,1,Prevalent Cases,5,0
+MALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,6,0,0,0,4,0,2,0,0,0,0,18,LN Active,0,4
+MALE,Not Hispanic or Latino,Pakistani,0,0,1,1,0,0,0,0,1,0,2,0,0,1,0,1,0,0,0,1,LN Active,8,1
+MALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,3,0,3,0,0,0,3,0,0,0,0,3,0,12,Prevalent Cases,4,1
+MALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,3,Prevalent Cases,4,0
+MALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,14,LN Active,6,0
+MALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,9,LN Active,,
+MALE,Not Hispanic or Latino,Black,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,4,0,0,0,6,Extra-renal Lupus Flare,4,0
+MALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,Prevalent Cases,0,1
+MALE,Not Hispanic or Latino,,0,0,0,1,0,0,1,0,1,0,0,0,6,0,1,1,2,0,0,6,LN Active,2,0
+MALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,5,Prevalent Cases,4,0
+MALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,5,LN Active,2,3
+MALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,2,0,1,0,0,0,0,6,New Onset,8,0
+MALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,New Onset,,
+MALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6,Prevalent Cases,0,0
+MALE,Not Hispanic or Latino,White,0,0,2,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,16,Prevalent Cases,0,1
+MALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,2,0,1,0,0,0,0,5,LN Active,0,0
+MALE,Not Hispanic or Latino,White,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,Extra-renal Lupus Flare,6,4
+MALE,Not Hispanic or Latino,African American,0,0,2,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,6,Prevalent Cases,2,0
+MALE,Not Hispanic or Latino,African American,0,0,2,0,0,0,0,0,2,0,2,0,2,0,0,0,0,0,0,14,Prevalent Cases,0,0
+MALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,Extra-renal Lupus Flare,3,0
+MALE,Not Hispanic or Latino,White,0,0,2,2,0,0,0,0,2,0,0,0,0,3,0,0,0,0,0,10,Prevalent Cases,0,2
+MALE,Not Hispanic or Latino,,0,0,2,2,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,10,Prevalent Cases,2,2
+MALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,,
+MALE,Not Hispanic or Latino,Korean,0,0,0,0,0,0,0,0,4,0,0,0,5,0,3,0,0,0,0,11,LN Active,4,0
+MALE,Not Hispanic or Latino,,0,0,0,0,0,0,2,0,2,0,0,0,2,0,0,0,0,0,0,6,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,White,0,5,5,0,5,5,0,5,5,2,0,6,10,0,6,5,0,0,0,67,LN Active,8,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,5,0,2,0,0,0,38,0,5,5,0,0,0,112,LN Active,14,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,6,0,0,0,0,9,1,1,5,0,0,2,0,0,0,0,24,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,4,13,2,28,6,0,0,0,0,0,0,1,51,New Onset,0,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,11,0,0,6,43,0,0,0,0,0,0,12,Extra-renal Lupus Flare,7,3
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,1,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,14,New Onset,11,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,3,0,1,0,0,4,0,14,LN Active,0,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,4,4,8,0,0,0,0,4,8,4,4,0,0,4,4,0,0,0,54,Extra-renal Lupus Flare,8,3
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,3,Prevalent Cases,1,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,4,Extra-renal Lupus Flare,14,0
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,9,LN Active,4,1
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,3,0,0,0,0,3,3,0,0,0,0,3,Prevalent Cases,13,2
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,9,New Onset,4,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,4,0,0,0,5,0,3,0,0,0,6,0,4,4,0,0,0,10,LN Active,8,5
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,6,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,,0,0,4,0,0,0,0,0,4,0,0,0,1,0,0,1,1,0,0,32,Extra-renal Lupus Flare,2,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,10,LN Active,8,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,7,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,28,Prevalent Cases,0,3
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,11,Prevalent Cases,2,4
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,1,10,Prevalent Cases,0,3
+FEMALE,Not Hispanic or Latino,,0,0,2,2,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,6,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,6,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,,0,0,2,0,0,0,0,0,2,0,2,0,4,1,2,4,0,0,0,7,LN Active,10,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+FEMALE,Not Hispanic or Latino,White,0,0,2,2,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,17,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,3,Prevalent Cases,10,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,4,0,0,0,2,0,0,0,0,6,Extra-renal Lupus Flare,10,2
+FEMALE,Not Hispanic or Latino,White,0,0,15,3,0,0,0,0,7,3,3,12,0,0,0,0,0,0,0,51,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,16,0,0,4,11,0,0,0,0,0,0,0,3,0,0,66,Extra-renal Lupus Flare,2,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,3,0,7,3,0,0,2,0,0,0,0,11,Prevalent Cases,6,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,2,0,0,0,0,2,2,2,0,0,0,22,LN Active,6,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,9,New Onset,14,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,,0,0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,21,Prevalent Cases,1,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,2,New Onset,6,3
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,1,6,LN Active,0,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,1,2,0,0,0,0,0,0,0,3,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,2,0,0,0,3,0,2,0,0,0,2,4,New Onset,6,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,1,0,1,0,0,0,2,8,Extra-renal Lupus Flare,4,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,8,Prevalent Cases,1,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,2,0,0,0,0,0,2,0,1,0,0,0,2,0,0,0,0,5,Prevalent Cases,6,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,1,0,0,0,0,4,0,3,1,0,0,0,0,0,0,0,8,Prevalent Cases,6,
+FEMALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+FEMALE,Not Hispanic or Latino,White,0,2,0,2,0,0,0,0,2,2,2,0,0,0,2,0,0,0,0,10,Prevalent Cases,6,0
+FEMALE,Not Hispanic or Latino,Asian,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,4,LN Active,6,0
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,1,0,0,0,2,0,0,0,1,1,0,9,LN Active,10,2
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,3,Extra-renal Lupus Flare,2,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,3,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,White,0,0,3,3,0,0,0,0,9,0,0,9,12,15,7,3,0,0,0,15,LN Active,18,3
+FEMALE,Not Hispanic or Latino,White,0,0,0,4,0,0,0,0,8,0,11,13,0,0,0,0,0,0,0,48,Extra-renal Lupus Flare,2,5
+FEMALE,Not Hispanic or Latino,White,0,0,0,2,0,0,0,0,4,0,6,0,0,0,0,0,0,0,0,16,New Onset,0,0
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,15,LN Active,10,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,1,0,2,0,0,0,0,16,New Onset,0,1
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,6,New Onset,,
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,6,LN Active,4,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,2,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,2,0,0,0,0,2,0,1,0,0,0,2,0,0,0,0,4,Extra-renal Lupus Flare,8,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,16,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,2,0,3,0,0,3,3,0,1,0,0,0,0,2,LN Active,22,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,7,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,2,Extra-renal Lupus Flare,4,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,6,LN Active,8,0
+FEMALE,Not Hispanic or Latino,,1,0,1,0,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,6,Extra-renal Lupus Flare,6,7
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,Prevalent Cases,4,5
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,8,LN Active,14,0
+FEMALE,Not Hispanic or Latino,White,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,LN Active,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,2,0,0,0,0,6,0,0,0,0,0,2,0,0,0,0,18,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,6,Prevalent Cases,0,4
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7,New Onset,6,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,3,0,0,0,0,2,0,0,0,2,1,2,0,2,0,2,23,LN Active,12,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,12,LN Active,8,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,LN Active,12,1
+FEMALE,Not Hispanic or Latino,Filipino,0,0,0,4,0,0,0,0,4,0,0,0,4,0,3,0,0,0,0,1,LN Active,9,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,9,Extra-renal Lupus Flare,6,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,2,2,1,0,0,0,0,0,0,10,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,White,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,2,Extra-renal Lupus Flare,8,0
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,10,Extra-renal Lupus Flare,10,6
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1,18,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,,0,3,18,0,0,0,0,0,17,0,0,3,0,0,0,0,0,0,0,5,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,3,3,0,0,0,0,8,0,2,0,13,0,2,0,0,6,0,34,Prevalent Cases,4,2
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,2,1,0,0,0,0,0,0,0,12,New Onset,8,0
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,5,LN Active,12,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,3,New Onset,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,3,0,0,0,0,0,3,0,0,0,0,0,3,0,0,0,0,25,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,Filipino,0,0,0,0,0,0,2,0,2,0,0,0,1,0,2,0,0,0,0,11,LN Active,14,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,3,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,17,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,African American,0,0,1,0,0,0,0,0,2,0,0,0,2,0,1,0,0,0,0,6,Prevalent Cases,4,3
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,1,3,0,0,3,0,4,1,1,0,2,0,3,0,0,0,0,20,LN Active,0,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,3,0,4,0,0,0,0,4,4,0,0,5,0,2,0,0,0,4,47,Extra-renal Lupus Flare,2,0
+FEMALE,Not Hispanic or Latino,,0,0,3,0,0,0,0,3,3,0,3,0,3,0,3,0,0,0,0,50,LN Active,7,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,2,0,0,0,0,0,2,0,0,0,0,2,2,0,2,0,0,23,Prevalent Cases,0,4
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,9,Prevalent Cases,0,4
+FEMALE,Not Hispanic or Latino,,0,0,2,0,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,6,Prevalent Cases,1,1
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,8,Prevalent Cases,2,3
+FEMALE,Not Hispanic or Latino,African American,0,0,2,2,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,12,LN Active,0,0
+FEMALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,8,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,3,0,0,3,3,0,0,0,0,0,0,29,LN Active,8,1
+FEMALE,Not Hispanic or Latino,Asian,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,6,LN Active,9,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,3,0,0,3,0,3,0,0,0,3,0,0,0,0,3,0,9,Extra-renal Lupus Flare,4,2
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,1,2,0,1,0,0,0,0,16,LN Active,2,
+FEMALE,Not Hispanic or Latino,African American,0,0,0,2,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,2,New Onset,19,3
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,0,0,1,0,0,0,0,1,2,0,0,0,0,6,LN Active,16,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,30,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,3,Prevalent Cases,8,1
+FEMALE,Not Hispanic or Latino,White,0,0,10,0,0,2,0,0,12,0,0,0,12,0,4,0,0,0,2,103,Extra-renal Lupus Flare,2,3
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,4,0,16,0,6,9,0,0,0,0,0,23,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,African American,0,1,0,0,0,0,0,0,2,0,0,1,8,0,0,0,0,0,0,4,Extra-renal Lupus Flare,8,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,1,10,Extra-renal Lupus Flare,4,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,2,0,2,0,0,0,1,0,0,0,0,36,New Onset,6,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,2,Extra-renal Lupus Flare,8,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,4,3,0,0,0,0,4,0,0,0,0,0,1,0,0,0,0,8,Extra-renal Lupus Flare,8,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,4,New Onset,10,0
+FEMALE,Not Hispanic or Latino,,0,0,2,2,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,2,Extra-renal Lupus Flare,0,3
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,8,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,2,41,Prevalent Cases,0,3
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,16,Prevalent Cases,2,2
+FEMALE,Not Hispanic or Latino,African American,0,0,1,1,0,0,0,0,5,0,1,0,1,0,0,1,0,0,0,34,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,4,0,3,3,0,0,0,24,Extra-renal Lupus Flare,6,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,6,0,0,0,4,0,2,0,0,0,0,2,New Onset,2,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,2,New Onset,2,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,12,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,White,0,1,3,2,1,0,0,0,1,0,0,1,7,0,1,2,1,0,0,5,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,2,0,0,0,12,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,Black,0,1,3,1,0,2,1,0,2,0,0,1,4,0,1,3,0,0,0,10,Extra-renal Lupus Flare,14,3
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,1,1,0,0,1,1,1,0,0,1,1,0,0,1,1,0,0,15,Prevalent Cases,0,5
+FEMALE,Not Hispanic or Latino,Black,0,0,1,0,0,0,0,0,1,4,1,0,2,0,1,0,0,0,0,14,Extra-renal Lupus Flare,7,1
+FEMALE,Not Hispanic or Latino,White,0,0,9,3,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,32,Extra-renal Lupus Flare,2,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,3,0,0,0,0,3,0,3,5,2,0,0,0,0,0,0,36,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,White,0,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,3,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,6,LN Active,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,13,Extra-renal Lupus Flare,6,
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,1,0,0,0,2,0,0,0,1,4,New Onset,12,
+FEMALE,Not Hispanic or Latino,African American,0,0,0,5,0,0,4,0,5,0,0,4,3,2,4,0,0,0,4,12,LN Active,6,0
+FEMALE,Not Hispanic or Latino,Black,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,3,Extra-renal Lupus Flare,4,2
+FEMALE,Not Hispanic or Latino,White,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,16,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,7,Extra-renal Lupus Flare,4,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,New Onset,0,0
+FEMALE,Not Hispanic or Latino,White,0,1,0,2,0,0,0,0,7,0,5,0,3,0,1,0,0,0,0,12,Prevalent Cases,2,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,8,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,9,LN Active,0,0
+FEMALE,Not Hispanic or Latino,Other,0,0,0,0,0,0,0,0,2,0,2,0,0,2,2,0,0,0,0,2,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,,0,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,2,Extra-renal Lupus Flare,4,3
+FEMALE,Not Hispanic or Latino,White,0,0,8,0,0,0,0,4,8,8,128,8,0,0,12,8,0,0,4,142,Extra-renal Lupus Flare,4,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,5,0,5,5,35,8,20,0,18,0,0,0,0,93,Extra-renal Lupus Flare,6,3
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,8,New Onset,4,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,7,Extra-renal Lupus Flare,8,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,2,0,0,0,0,1,0,2,0,0,0,2,0,0,0,0,26,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,8,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,10,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,2,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,12,Extra-renal Lupus Flare,10,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,6,LN Active,10,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,2,0,0,0,0,3,0,0,0,0,0,2,0,0,0,0,12,New Onset,9,0
+FEMALE,Not Hispanic or Latino,African American,0,3,3,0,0,0,0,0,3,0,0,0,3,0,1,1,0,0,0,4,Extra-renal Lupus Flare,6,6
+FEMALE,Not Hispanic or Latino,,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,6,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,2,0,0,0,0,2,0,0,2,6,0,2,0,3,0,0,46,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,4,0,0,0,9,Prevalent Cases,8,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,2,17,Prevalent Cases,2,2
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,10,Prevalent Cases,0,2
+FEMALE,Not Hispanic or Latino,White,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,18,Extra-renal Lupus Flare,6,1
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,3,2,0,0,0,0,0,0,21,Prevalent Cases,0,3
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,9,Extra-renal Lupus Flare,,7
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,1,1,0,0,0,0,1,0,1,1,0,1,1,1,1,0,0,14,Extra-renal Lupus Flare,,
+FEMALE,Not Hispanic or Latino,,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,2,Prevalent Cases,8,0
+FEMALE,Not Hispanic or Latino,White,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,6,Extra-renal Lupus Flare,8,2
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,3,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,Black,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1,0,0,0,0,11,LN Active,16,2
+FEMALE,Not Hispanic or Latino,White,0,1,1,1,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,3,LN Active,16,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,6,0,0,0,0,0,0,9,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,3,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,23,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,28,0,3,11,51,0,0,0,0,0,0,5,Extra-renal Lupus Flare,4,0
+FEMALE,Not Hispanic or Latino,Chinese,0,0,0,4,1,0,0,0,8,0,0,0,0,0,7,0,0,0,2,10,New Onset,0,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,10,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,8,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,8,LN Active,14,1
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,2,0,0,0,0,2,0,0,0,2,0,2,0,2,0,0,12,Prevalent Cases,2,2
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,10,Prevalent Cases,1,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,9,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Filipino,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,2,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+FEMALE,Not Hispanic or Latino,Other,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Determination,,
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,2,1,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,6,Prevalent Cases,9,2
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,0,0,2,0,0,0,2,0,2,0,0,0,0,24,LN Active,6,3
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,4,Extra-renal Lupus Flare,14,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,0,0,25,Prevalent Cases,2,4
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,3,3,0,0,0,0,3,0,0,0,7,0,0,0,0,0,0,0,LN Active,4,1
+FEMALE,Not Hispanic or Latino,Asian,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,5,New Onset,9,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,15,New Onset,,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,LN Active,10,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,3,Prevalent Cases,13,0
+FEMALE,Not Hispanic or Latino,,0,0,2,2,0,0,0,2,2,0,1,0,4,0,2,0,2,0,0,4,Prevalent Cases,4,2
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,2,8,New Onset,19,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,1,0,1,0,0,0,2,0,1,0,0,0,0,0,Extra-renal Lupus Flare,16,2
+FEMALE,Not Hispanic or Latino,African American,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,4,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,1,0,0,0,0,2,0,0,0,2,0,1,1,1,0,0,2,Extra-renal Lupus Flare,2,1
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,,
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,,0,0,0,3,0,0,0,0,3,0,0,0,0,0,3,1,0,0,0,15,Extra-renal Lupus Flare,0,0
+FEMALE,Not Hispanic or Latino,African American,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,1,Prevalent Cases,4,3
+FEMALE,Not Hispanic or Latino,White,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,6,LN Active,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,1,0,0,0,0,0,2,0,1,0,1,0,0,1,0,0,0,0,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,5,Extra-renal Lupus Flare,,0
+FEMALE,Not Hispanic or Latino,Asian,0,0,4,0,0,0,0,0,10,0,6,5,0,0,1,0,0,0,1,9,Prevalent Cases,8,0
+FEMALE,Not Hispanic or Latino,Asian,4,0,8,0,0,0,4,0,5,0,0,0,4,0,2,0,0,0,0,18,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,3,0,1,0,9,0,5,0,0,0,0,6,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,Asian,0,0,0,0,0,0,5,0,5,5,21,10,0,0,0,0,0,0,3,68,Extra-renal Lupus Flare,6,2
+FEMALE,Not Hispanic or Latino,African American,0,0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,43,Extra-renal Lupus Flare,4,0
+FEMALE,Not Hispanic or Latino,,0,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,4,Extra-renal Lupus Flare,6,0
+FEMALE,Not Hispanic or Latino,,0,0,2,0,0,0,0,0,4,0,2,0,2,0,0,0,2,2,0,2,Extra-renal Lupus Flare,9,0
+FEMALE,Not Hispanic or Latino,Vietnamese,0,0,0,0,0,0,0,0,3,0,0,0,4,0,2,0,0,0,0,4,New Onset,4,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,3,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,22,Extra-renal Lupus Flare,2,2
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,Prevalent Cases,4,0
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,Prevalent Cases,0,0
+FEMALE,Not Hispanic or Latino,African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,5,New Onset,6,
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,Prevalent Cases,2,0
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,New Onset,2,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,2,22,Prevalent Cases,0,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,9,Extra-renal Lupus Flare,0,0
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,3,0,0,0,0,0,3,0,0,0,0,0,3,0,0,0,0,6,Extra-renal Lupus Flare,4,1
+FEMALE,Not Hispanic or Latino,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Extra-renal Lupus Flare,,
+FEMALE,Not Hispanic or Latino,Black or African American,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Prevalent Cases,,
+FEMALE,Not Hispanic or Latino,White,0,0,0,0,0,0,0,0,1,0,1,0,0,1,2,0,0,0,0,7,Extra-renal Lupus Flare,4,2
+FEMALE,Not Hispanic or Latino,White,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,Determination,8,4

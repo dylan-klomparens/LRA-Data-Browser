@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 
+st.set_page_config(layout="wide")
+
 df = pd.read_csv("data.csv")
 
 st.title("LRA data browser embedded dashboard")
@@ -15,97 +17,101 @@ st.header("Waterfall selection")
 with st.expander("Introduction and usage instructions"):
 	st.markdown(f"This waterfall chart visually summarizes the sequential attrition of the study cohort as increasingly specific inclusion criteria are applied. Each bar represents the remaining participant count after implementing a particular filter, which can be: sex at birth, race, ethnicity, cohort, disease activity (SLEDAI), organ damage (SLICC), and medication use. This allows you to see sample size reduction at each step, highlighting the effect of individual and combined eligibility criteria on cohort composition.")
 
-# --- Filter options ---
-drug_cols = [
-	'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',
-	'cyclosporine', 'cyclophosphamide', 'dapsone', 'hydroxychloroquine',
-	'leflunomide', 'methotrexate', 'methylprednisolone', 'mycophenolate mofetil',
-	'mycophenolic acid', 'prednisone', 'rituximab', 'tacrolimus',
-	'voclosporine', 'triamcinolone', 'other drugs'
-]
+left, right = st.columns([1, 3])
 
-# 1. Sex at birth
-sex = st.selectbox("Sex at birth", options=['All'] + sorted(df['sex_at_birth'].dropna().unique().tolist()))
-# 2. Race
-race = st.selectbox("Race", options=['All'] + sorted(df['race'].dropna().unique().tolist()))
-# 3. Ethnicity
-ethnicity = st.selectbox("Ethnicity", options=['All'] + sorted(df['ethnicity'].dropna().unique().tolist()))
-# 4. Cohort
-cohort = st.selectbox("Cohort", options=['All'] + sorted(df['cohort'].dropna().unique().tolist()))
-# 5. SLEDAI (range)
-sledaicol = [col for col in df.columns if "SLEDAI" in col and "score" in col][0]
-sld_min, sld_max = int(df[sledaicol].min()), int(df[sledaicol].max())
-sledai_range = st.slider("SLEDAI 2K score range", min_value=sld_min, max_value=sld_max, value=(sld_min, sld_max))
-# 6. SLICC (range)
-slicccol = [col for col in df.columns if "SLICC" in col and "damage index" in col][0]
-slc_min, slc_max = int(df[slicccol].min()), int(df[slicccol].max())
-slicc_range = st.slider("SLICC damage index range", min_value=slc_min, max_value=slc_max, value=(slc_min, slc_max))
-# 7. Drugs (multiselect)
-drug_selection = st.multiselect("On which medications? (must be on ALL selected)", options=drug_cols)
+with left:
+	# --- Filter options ---
+	drug_cols = [
+		'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',
+		'cyclosporine', 'cyclophosphamide', 'dapsone', 'hydroxychloroquine',
+		'leflunomide', 'methotrexate', 'methylprednisolone', 'mycophenolate mofetil',
+		'mycophenolic acid', 'prednisone', 'rituximab', 'tacrolimus',
+		'voclosporine', 'triamcinolone', 'other drugs'
+	]
 
-# --- Waterfall Logic ---
-counts = []
-labels = []
+	# 1. Sex at birth
+	sex = st.selectbox("Sex at birth", options=['All'] + sorted(df['sex_at_birth'].dropna().unique().tolist()))
+	# 2. Race
+	race = st.selectbox("Race", options=['All'] + sorted(df['race'].dropna().unique().tolist()))
+	# 3. Ethnicity
+	ethnicity = st.selectbox("Ethnicity", options=['All'] + sorted(df['ethnicity'].dropna().unique().tolist()))
+	# 4. Cohort
+	cohort = st.selectbox("Cohort", options=['All'] + sorted(df['cohort'].dropna().unique().tolist()))
+	# 5. SLEDAI (range)
+	sledaicol = [col for col in df.columns if "SLEDAI" in col and "score" in col][0]
+	sld_min, sld_max = int(df[sledaicol].min()), int(df[sledaicol].max())
+	sledai_range = st.slider("SLEDAI 2K score range", min_value=sld_min, max_value=sld_max, value=(sld_min, sld_max))
+	# 6. SLICC (range)
+	slicccol = [col for col in df.columns if "SLICC" in col and "damage index" in col][0]
+	slc_min, slc_max = int(df[slicccol].min()), int(df[slicccol].max())
+	slicc_range = st.slider("SLICC damage index range", min_value=slc_min, max_value=slc_max, value=(slc_min, slc_max))
+	# 7. Drugs (multiselect)
+	drug_selection = st.multiselect("On which medications? (must be on ALL selected)", options=drug_cols)
 
-df_current = df.copy()
-# 1. All
-counts.append(len(df_current))
-labels.append("All participants")
+	# --- Waterfall Logic ---
+	counts = []
+	labels = []
 
-# 2. Sex at birth
-if sex != 'All':
-	df_current = df_current[df_current['sex_at_birth'] == sex]
-	labels.append(f"Sex: {sex}")
+	df_current = df.copy()
+	# 1. All
 	counts.append(len(df_current))
+	labels.append("All participants")
 
-# 3. Race
-if race != 'All':
-	df_current = df_current[df_current['race'] == race]
-	labels.append(f"Race: {race}")
-	counts.append(len(df_current))
-
-# 4. Ethnicity
-if ethnicity != 'All':
-	df_current = df_current[df_current['ethnicity'] == ethnicity]
-	labels.append(f"Ethnicity: {ethnicity}")
-	counts.append(len(df_current))
-
-# 5. Cohort
-if cohort != 'All':
-	df_current = df_current[df_current['cohort'] == cohort]
-	labels.append(f"Cohort: {cohort}")
-	counts.append(len(df_current))
-
-# 6. SLEDAI range
-df_current = df_current[(df_current[sledaicol] >= sledai_range[0]) & (df_current[sledaicol] <= sledai_range[1])]
-labels.append(f"SLEDAI: {sledai_range[0]}–{sledai_range[1]}")
-counts.append(len(df_current))
-
-# 7. SLICC range
-df_current = df_current[(df_current[slicccol] >= slicc_range[0]) & (df_current[slicccol] <= slicc_range[1])]
-labels.append(f"SLICC: {slicc_range[0]}–{slicc_range[1]}")
-counts.append(len(df_current))
-
-# 8. Drugs
-if drug_selection:
-	for drug in drug_selection:
-		df_current = df_current[df_current[drug] > 0]
-		labels.append(f"On {drug}")
+	# 2. Sex at birth
+	if sex != 'All':
+		df_current = df_current[df_current['sex_at_birth'] == sex]
+		labels.append(f"Sex: {sex}")
 		counts.append(len(df_current))
 
-# --- Plot Waterfall ---
-fig, ax = plt.subplots(figsize=(9, 4))
-bars = ax.bar(range(len(counts)), counts, color='deepskyblue', edgecolor='black')
-ax.set_xticks(range(len(labels)))
-ax.set_xticklabels(labels, rotation=22, ha='right')
-ax.set_ylabel("Participant Count")
-ax.set_title("Cohort Size After Each Filter (Waterfall Plot)")
-for i, c in enumerate(counts):
-	ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
-# Remove top and right spines
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
-st.pyplot(fig)
+	# 3. Race
+	if race != 'All':
+		df_current = df_current[df_current['race'] == race]
+		labels.append(f"Race: {race}")
+		counts.append(len(df_current))
+
+	# 4. Ethnicity
+	if ethnicity != 'All':
+		df_current = df_current[df_current['ethnicity'] == ethnicity]
+		labels.append(f"Ethnicity: {ethnicity}")
+		counts.append(len(df_current))
+
+	# 5. Cohort
+	if cohort != 'All':
+		df_current = df_current[df_current['cohort'] == cohort]
+		labels.append(f"Cohort: {cohort}")
+		counts.append(len(df_current))
+
+	# 6. SLEDAI range
+	df_current = df_current[(df_current[sledaicol] >= sledai_range[0]) & (df_current[sledaicol] <= sledai_range[1])]
+	labels.append(f"SLEDAI: {sledai_range[0]}–{sledai_range[1]}")
+	counts.append(len(df_current))
+
+	# 7. SLICC range
+	df_current = df_current[(df_current[slicccol] >= slicc_range[0]) & (df_current[slicccol] <= slicc_range[1])]
+	labels.append(f"SLICC: {slicc_range[0]}–{slicc_range[1]}")
+	counts.append(len(df_current))
+
+	# 8. Drugs
+	if drug_selection:
+		for drug in drug_selection:
+			df_current = df_current[df_current[drug] > 0]
+			labels.append(f"On {drug}")
+			counts.append(len(df_current))
+
+with right:
+	# --- Plot Waterfall ---
+	fig, ax = plt.subplots(figsize=(9, 4))
+	bars = ax.bar(range(len(counts)), counts, color='deepskyblue', edgecolor='black')
+	ax.set_xticks(range(len(labels)))
+	ax.set_xticklabels(labels, rotation=22, ha='right')
+	ax.set_ylabel("Participant Count")
+	ax.set_title("Cohort Size After Each Filter (Waterfall Plot)")
+	for i, c in enumerate(counts):
+		ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
+	# Remove top and right spines
+	ax.spines['top'].set_visible(False)
+	ax.spines['right'].set_visible(False)
+	st.pyplot(fig)
 
 st.divider()
 

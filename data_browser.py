@@ -1,5 +1,7 @@
+import gc
 import tracemalloc
 
+import matplotlib
 import numpy as np
 import streamlit as st
 import pandas as pd
@@ -115,17 +117,19 @@ def waterfall(df):
 		# Remove top and right spines
 		ax.spines['top'].set_visible(False)
 		ax.spines['right'].set_visible(False)
-		st.pyplot(fig)
+		st.pyplot(fig, clear_figure=True)
+		plt.close(fig)
 
 
 def gender_distribution_pie_chart(df):
 	# Pie chart: gender distribution
 	st.header("Gender Distribution")
 	gender_counts = df["sex_at_birth"].value_counts()
-	fig2, ax2 = plt.subplots()
-	ax2.pie(gender_counts, labels=gender_counts.index, autopct="%1.1f%%", startangle=90)
-	ax2.axis("equal")
-	st.pyplot(fig2)
+	fig, ax = plt.subplots()
+	ax.pie(gender_counts, labels=gender_counts.index, autopct="%1.1f%%", startangle=90)
+	ax.axis("equal")
+	st.pyplot(fig, clear_figure=True)
+	plt.close(fig)
 
 
 def SLEDAI_2K_scores():
@@ -154,7 +158,8 @@ def SLEDAI_2K_scores():
 	ax.set_ylabel("Participant count")
 	ax.set_title("Histogram of SLEDAI 2K Scores")
 	ax.legend()
-	st.pyplot(fig)
+	st.pyplot(fig, clear_figure=True)
+	plt.close(fig)
 	with st.expander("Additional details"):
 		st.markdown(f"""
 		Number of valid SLEDAI scores: {len(slicc_indexes)}
@@ -178,7 +183,7 @@ def SLICC_damage_index_scores():
 
 	The SLICC Damage Index tallies irreversible damage that has occurred since the onset of lupus, in organs like the kidneys, heart, skin, nervous system, and others. Damage must be present for at least 6 months to be counted. Each type of damage has a point value, and the total score reflects the cumulative burden of organ damage.
 
-	## What’s It Used For?
+	## What's It Used For?
 	* To track the long-term impact of lupus and its treatments.
 	* To predict outcomes and prognosis (higher damage index = greater risk for poor outcomes).
 	* For research to compare damage across populations.
@@ -206,7 +211,8 @@ def SLICC_damage_index_scores():
 	ax.set_xlabel("Latest SLICC damage index")
 	ax.set_ylabel("Participant count")
 	ax.set_title("Histogram of SLICC Damage Indexes")
-	st.pyplot(fig)
+	st.pyplot(fig, clear_figure=True)
+	plt.close(fig)
 
 	with st.expander("Additional details"):
 		st.markdown(f"""
@@ -221,9 +227,10 @@ def cohort():
 
 	cohort_counts = df["cohort"].value_counts()
 	fig, ax = plt.subplots()
-	ax.pie(cohort_counts, labels=cohort_counts.index, autopct='%1.1f%%', startangle=90)
-	ax.axis('equal')
-	st.pyplot(fig)
+	ax.pie(cohort_counts, labels=cohort_counts.index, autopct="%1.1f%%", startangle=90)
+	ax.axis("equal")
+	st.pyplot(fig, clear_figure=True)
+	plt.close(fig)
 
 snapshot1 = tracemalloc.take_snapshot()
 
@@ -238,10 +245,14 @@ SLEDAI_2K_scores()
 st.divider()
 SLICC_damage_index_scores()
 st.divider()
+plt.close("all")
+gc.collect()
 
 snapshot2 = tracemalloc.take_snapshot()
 top_stats = snapshot2.compare_to(snapshot1, 'lineno')
 
-print("Top 10 differences:")
-for stat in top_stats[:10]:
+increases = [stat for stat in top_stats if stat.size_diff > 0]
+
+print("Top 10 memory increases:")
+for stat in increases[:10]:
 	print(stat)

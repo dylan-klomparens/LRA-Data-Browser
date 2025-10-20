@@ -1,16 +1,19 @@
 import gc
 import tracemalloc
+from os import environ
 
-import matplotlib
-import numpy as np
-import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import streamlit as st
 from scipy.stats import gaussian_kde
 
 st.set_page_config(layout="wide")
 
-tracemalloc.start()
+debug = environ.get("DEBUG")
+if debug:
+	tracemalloc.start()
+
 
 @st.cache_data(max_entries=1, hash_funcs={pd.DataFrame: lambda x: None})
 def load_data():
@@ -232,7 +235,8 @@ def cohort():
 	st.pyplot(fig, clear_figure=True)
 	plt.close(fig)
 
-snapshot1 = tracemalloc.take_snapshot()
+if debug:
+	snapshot1 = tracemalloc.take_snapshot()
 
 df = load_data()
 st.title("LRA data browser embedded dashboard")
@@ -248,11 +252,12 @@ st.divider()
 plt.close("all")
 gc.collect()
 
-snapshot2 = tracemalloc.take_snapshot()
-top_stats = snapshot2.compare_to(snapshot1, 'lineno')
+if debug:
+	snapshot2 = tracemalloc.take_snapshot()
+	top_stats = snapshot2.compare_to(snapshot1, 'lineno')
 
-increases = [stat for stat in top_stats if stat.size_diff > 0]
+	increases = [stat for stat in top_stats if stat.size_diff > 0]
 
-print("Top 10 memory increases:")
-for stat in increases[:10]:
-	print(stat)
+	print("Top 10 memory increases:")
+	for stat in increases[:10]:
+		print(stat)

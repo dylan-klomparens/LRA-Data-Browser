@@ -1,0 +1,24 @@
+[Unit]
+Description=LRA Data Browser (Streamlit)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+
+WorkingDirectory=/opt/LRA-Data-Browser
+# Use the venv's streamlit to run the app
+ExecStart=/opt/LRA-Data-Browser/.venv/bin/streamlit run /opt/LRA-Data-Browser/data_browser.py
+
+# Make sure the venv tools are first on PATH
+Environment="VIRTUAL_ENV=/opt/LRA-Data-Browser/.venv"
+Environment="PATH=/opt/LRA-Data-Browser/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
+
+# Streamlit settings are read from /opt/LRA-Data-Browser/.streamlit/config.toml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -278,7 +278,6 @@ st.divider()
 SLEDAI_2K_scores()
 st.divider()
 SLICC_damage_index_scores()
-st.divider()
 plt.close("all")
 gc.collect()
 

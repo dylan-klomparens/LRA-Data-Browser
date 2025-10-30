@@ -9,6 +9,11 @@ import streamlit as st
 from scipy.stats import gaussian_kde
 
 
+# --- Global Color Constants ---
+COLOR_BAR = "#5c2f92"
+COLOR_PIE = ["#5c2f92", "#a72009"]
+COLOR_KDE = "#a72009"
+
 debug = environ.get("DEBUG")
 if debug:
 	tracemalloc.start()
@@ -125,7 +130,7 @@ def waterfall(df):
 	with right:
 		# --- Plot Waterfall ---
 		fig, ax = plt.subplots(figsize=(9, 4))
-		bars = ax.bar(range(len(counts)), counts, color='deepskyblue', edgecolor='black')
+		bars = ax.bar(range(len(counts)), counts, color=COLOR_BAR, edgecolor='black')
 		ax.set_xticks(range(len(labels)))
 		ax.set_xticklabels(labels, rotation=22, ha='right')
 		ax.set_ylabel("Participant Count")
@@ -144,7 +149,7 @@ def gender_distribution_pie_chart(df):
 	st.header("Gender Distribution")
 	gender_counts = df["sex_at_birth"].value_counts()
 	fig, ax = plt.subplots()
-	ax.pie(gender_counts, labels=gender_counts.index, autopct="%1.1f%%", startangle=90)
+	ax.pie(gender_counts, labels=gender_counts.index, autopct="%1.1f%%", startangle=90, colors=COLOR_PIE)
 	ax.axis("equal")
 	st.pyplot(fig, clear_figure=True)
 	plt.close(fig)
@@ -168,10 +173,10 @@ def SLEDAI_2K_scores():
 		""")
 	slicc_indexes = df["latest SLEDAI 2K score"].dropna()
 	fig, ax = plt.subplots(figsize=(8, 5))
-	ax.hist(slicc_indexes, bins=15, edgecolor="black", alpha=0.7, label="Participant count")
+	ax.hist(slicc_indexes, bins=15, edgecolor="black", alpha=0.7, label="Participant count", color=COLOR_BAR)
 	density = gaussian_kde(slicc_indexes)
 	xs = np.linspace(slicc_indexes.min(), slicc_indexes.max(), 200)
-	ax.plot(xs, density(xs) * len(slicc_indexes) * (slicc_indexes.max() - slicc_indexes.min()) / 15, color="red", lw=2, label="Gaussian Kernel Density Estimation")
+	ax.plot(xs, density(xs) * len(slicc_indexes) * (slicc_indexes.max() - slicc_indexes.min()) / 15, color=COLOR_KDE, lw=2, label="Gaussian Kernel Density Estimation")
 	ax.set_xlabel("Latest SLEDAI 2K Score")
 	ax.set_ylabel("Participant count")
 	ax.set_title("Histogram of SLEDAI 2K Scores")
@@ -222,7 +227,7 @@ def SLICC_damage_index_scores():
 	bins = np.arange(min_val, max_val + 2) - 0.5  # Center bars on integers
 
 	# Plot histogram
-	ax.hist(slicc_indexes, bins=bins, edgecolor="black", alpha=0.7)
+	ax.hist(slicc_indexes, bins=bins, edgecolor="black", alpha=0.7, color=COLOR_BAR)
 
 	# Set x-ticks to integer values under bars
 	ax.set_xticks(np.arange(min_val, max_val + 1))
@@ -245,7 +250,7 @@ def cohort():
 
 	cohort_counts = df["cohort"].value_counts()
 	fig, ax = plt.subplots()
-	ax.pie(cohort_counts, labels=cohort_counts.index, autopct="%1.1f%%", startangle=90)
+	ax.pie(cohort_counts, labels=cohort_counts.index, autopct="%1.1f%%", startangle=90, colors=COLOR_PIE)
 	ax.axis("equal")
 	st.pyplot(fig, clear_figure=True)
 	plt.close(fig)

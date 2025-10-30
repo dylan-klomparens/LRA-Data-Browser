@@ -9,3 +9,9 @@ gatherUsageStats = false
 
 [ui]
 hideTopBar = true
+
+[theme]
+font = "Geologica:https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+primaryColor = "#5c2f92"  # This color code comes directly from lupusresearch.org website. The color is used for primary headings.
+textColor = "#59595b"  # This color code comes directly from lupusresearch.org website. The color is used for normal text.
+secondaryBackgroundColor = "#eeeff0"  # This color code comes directly from lupusresearch.org website. The color is used for input control backgrounds.

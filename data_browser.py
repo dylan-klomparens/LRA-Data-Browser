@@ -8,11 +8,26 @@ import pandas as pd
 import streamlit as st
 from scipy.stats import gaussian_kde
 
-st.set_page_config(layout="wide")
 
 debug = environ.get("DEBUG")
 if debug:
 	tracemalloc.start()
+
+
+def set_page_style():
+	st.set_page_config(layout="wide")
+	# Font color would normally be set in the Streamlit app's config.toml, but Streamlit does not have a configuration option to make headers a different color.
+	# It only has a configuration option for global font color. Thus, the header font color is customized here using CSS.
+	st.markdown(
+		"""
+		<style>
+			h1, h2, h3, h4, h5, h6 {
+				color: #5c2f92 !important;
+			}
+		</style>
+		""",
+		unsafe_allow_html=True,
+	)
 
 
 @st.cache_data(max_entries=1, hash_funcs={pd.DataFrame: lambda x: None})
@@ -238,6 +253,7 @@ def cohort():
 if debug:
 	snapshot1 = tracemalloc.take_snapshot()
 
+set_page_style()
 df = load_data()
 st.title("LRA data browser embedded dashboard")
 st.divider()

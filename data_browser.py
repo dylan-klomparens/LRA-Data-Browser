@@ -51,21 +51,21 @@ def waterfall(df):
 	with left:
 		# --- Filter options ---
 		drug_cols = [
-			'abatacept', 'anifrolumab-fnia', 'azathioprine', 'belimumab', 'chloroquine',
-			'cyclosporine', 'cyclophosphamide', 'dapsone', 'hydroxychloroquine',
-			'leflunomide', 'methotrexate', 'methylprednisolone', 'mycophenolate mofetil',
-			'mycophenolic acid', 'prednisone', 'rituximab', 'tacrolimus',
-			'voclosporine', 'triamcinolone', 'other drugs'
+			"abatacept", "anifrolumab-fnia", "azathioprine", "belimumab", "chloroquine",
+			"cyclosporine", "cyclophosphamide", "dapsone", "hydroxychloroquine",
+			"leflunomide", "methotrexate", "methylprednisolone", "mycophenolate mofetil",
+			"mycophenolic acid", "prednisone", "rituximab", "tacrolimus",
+			"voclosporine", "triamcinolone", "other drugs"
 		]
 
 		# 1. Sex at birth
-		sex = st.selectbox("Sex at birth", options=['All'] + sorted(df['sex_at_birth'].dropna().unique().tolist()))
+		sex = st.selectbox("Sex at birth", options=["All"] + sorted(df["sex_at_birth"].dropna().unique().tolist()))
 		# 2. Race
-		race = st.selectbox("Race", options=['All'] + sorted(df['race'].dropna().unique().tolist()))
+		race = st.selectbox("Race", options=["All"] + sorted(df["race"].dropna().unique().tolist()))
 		# 3. Ethnicity
-		ethnicity = st.selectbox("Ethnicity", options=['All'] + sorted(df['ethnicity'].dropna().unique().tolist()))
+		ethnicity = st.selectbox("Ethnicity", options=["All"] + sorted(df["ethnicity"].dropna().unique().tolist()))
 		# 4. Cohort
-		cohort = st.selectbox("Cohort", options=['All'] + sorted(df['cohort'].dropna().unique().tolist()))
+		cohort = st.selectbox("Cohort", options=["All"] + sorted(df["cohort"].dropna().unique().tolist()))
 		# 5. SLEDAI (range)
 		sledaicol = [col for col in df.columns if "SLEDAI" in col and "score" in col][0]
 		sld_min, sld_max = int(df[sledaicol].min()), int(df[sledaicol].max())
@@ -87,26 +87,26 @@ def waterfall(df):
 		labels.append("All participants")
 
 		# 2. Sex at birth
-		if sex != 'All':
-			df_current = df_current[df_current['sex_at_birth'] == sex]
+		if sex != "All":
+			df_current = df_current[df_current["sex_at_birth"] == sex]
 			labels.append(f"Sex: {sex}")
 			counts.append(len(df_current))
 
 		# 3. Race
-		if race != 'All':
-			df_current = df_current[df_current['race'] == race]
+		if race != "All":
+			df_current = df_current[df_current["race"] == race]
 			labels.append(f"Race: {race}")
 			counts.append(len(df_current))
 
 		# 4. Ethnicity
-		if ethnicity != 'All':
-			df_current = df_current[df_current['ethnicity'] == ethnicity]
+		if ethnicity != "All":
+			df_current = df_current[df_current["ethnicity"] == ethnicity]
 			labels.append(f"Ethnicity: {ethnicity}")
 			counts.append(len(df_current))
 
 		# 5. Cohort
-		if cohort != 'All':
-			df_current = df_current[df_current['cohort'] == cohort]
+		if cohort != "All":
+			df_current = df_current[df_current["cohort"] == cohort]
 			labels.append(f"Cohort: {cohort}")
 			counts.append(len(df_current))
 
@@ -130,16 +130,16 @@ def waterfall(df):
 	with right:
 		# --- Plot Waterfall ---
 		fig, ax = plt.subplots(figsize=(9, 4))
-		bars = ax.bar(range(len(counts)), counts, color=COLOR_BAR, edgecolor='black')
+		bars = ax.bar(range(len(counts)), counts, color=COLOR_BAR, edgecolor="black")
 		ax.set_xticks(range(len(labels)))
-		ax.set_xticklabels(labels, rotation=22, ha='right')
+		ax.set_xticklabels(labels, rotation=22, ha="right")
 		ax.set_ylabel("Participant Count")
 		ax.set_title("Cohort Size After Each Filter (Waterfall Plot)")
 		for i, c in enumerate(counts):
-			ax.text(i, c + max(counts)*0.015, str(c), ha='center', va='bottom')
+			ax.text(i, c + max(counts)*0.015, str(c), ha="center", va="bottom")
 		# Remove top and right spines
-		ax.spines['top'].set_visible(False)
-		ax.spines['right'].set_visible(False)
+		ax.spines["top"].set_visible(False)
+		ax.spines["right"].set_visible(False)
 		st.pyplot(fig, clear_figure=True)
 		plt.close(fig)
 
@@ -275,7 +275,7 @@ gc.collect()
 
 if debug:
 	snapshot2 = tracemalloc.take_snapshot()
-	top_stats = snapshot2.compare_to(snapshot1, 'lineno')
+	top_stats = snapshot2.compare_to(snapshot1, "lineno")
 
 	increases = [stat for stat in top_stats if stat.size_diff > 0]
 

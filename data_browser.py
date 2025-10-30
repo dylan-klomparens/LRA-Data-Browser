@@ -8,6 +8,8 @@ import pandas as pd
 import streamlit as st
 from scipy.stats import gaussian_kde
 
+from matplotlib import font_manager
+from matplotlib import rcParams
 
 # --- Global Color Constants ---
 COLOR_BAR = "#5c2f92"
@@ -33,6 +35,12 @@ def set_page_style():
 		""",
 		unsafe_allow_html=True,
 	)
+
+
+def set_matplotlib_font():
+	font_manager.fontManager.addfont("Geologica.ttf")
+	rcParams["font.family"] = "sans-serif"
+	rcParams["font.sans-serif"] = ["Geologica"]
 
 
 @st.cache_data(max_entries=1, hash_funcs={pd.DataFrame: lambda x: None})
@@ -259,6 +267,7 @@ if debug:
 	snapshot1 = tracemalloc.take_snapshot()
 
 set_page_style()
+set_matplotlib_font()
 df = load_data()
 st.title("LRA data browser embedded dashboard")
 st.divider()
